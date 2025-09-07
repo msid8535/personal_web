@@ -147,7 +147,7 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Sydney",
+        name: "University of Sydney", 
         description: <>Studying software engineering. <br /> Subjects: Machine Learning</>,
       },
     ],
