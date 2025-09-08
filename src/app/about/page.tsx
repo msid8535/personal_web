@@ -268,8 +268,11 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    <Text variant="heading-default-s" onBackground="neutral-weak">
                       {institution.description}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {institution.coursework}
                     </Text>
                   </Column>
                 ))}

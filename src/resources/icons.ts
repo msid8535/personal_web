@@ -27,11 +27,18 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiTypescript,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPython,
 } from "react-icons/si";
+
+import { GiArtificialHive } from "react-icons/gi";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
+  ai: GiArtificialHive,
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
   email: HiEnvelope,
@@ -55,7 +62,11 @@ export const iconLibrary: Record<string, IconType> = {
   document: HiOutlineDocument,
   rocket: HiOutlineRocketLaunch,
   javascript: SiJavascript,
+  typescript: SiTypescript,
+  postgresql: SiPostgresql,
+  python: SiPython,
   nextjs: SiNextdotjs,
+  nodejs: SiNodedotjs,
   supabase: SiSupabase,
   figma: SiFigma,
   facebook: FaFacebook,

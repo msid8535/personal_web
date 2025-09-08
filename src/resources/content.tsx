@@ -5,8 +5,8 @@ const person: Person = {
   firstName: "Mohsin Murtaza",
   lastName: "Siddiqui",
   name: `Mohsin Murtaza Siddiqui`,
-  role: "Software Engineer",
-  avatar: "/images/avatar.jpg", 
+  role: "Software Engineer", 
+  avatar: "/images/avatar.jpg",
   email: "mohsinsiddiqui1905@gmail.com",
   location: "Australia/Sydney", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi", "Urdu"], // optional: Leave the array empty if you don't want to display languages
@@ -54,14 +54,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured Project name</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
@@ -84,16 +84,14 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/mohsin-siddiqui",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Mohsin is a Sydney-based software engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Mohsin is a Sydney-based software engineer with a passion for building technological tools to help better the world.
       </>
     ),
   },
@@ -103,7 +101,7 @@ const about: About = {
     experiences: [
       {
         company: "Sydney Interplanetary Rover Initiative",
-        timeframe: "2025 - Present",
+        timeframe: "July 2025 - Present",
         role: "Machine Learning",
         achievements: [
           <>
@@ -122,12 +120,44 @@ const about: About = {
         ],
       },
       {
+        company: "RDA Group",
+        timeframe: "January 2025 - April 2025",
+        role: "Software Engineer Intern",
+        achievements: [
+          <>
+            Developed and integrated RESTful APIs and backend services using Node.js, 
+            with efficient data handling and storage powered by PostgreSQL (Supabase). 
+          </>,
+          <>
+            Utilised TypeScript and JavaScript within the Next.js framework to enhance 
+            performance and maintainability.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          //{
+          //  src: "/images/projects/project-01/siri_updated.jpg",
+          //  alt: "Once UI Project",
+          //  width: 16,
+          //  height: 9,
+          //},
+        ],
+      },
+      {
         company: "Sydney UAV Engineering",
-        timeframe: "2024 - Present",
+        timeframe: "June 2024 - Present",
         role: "Full Stack Software Engineer",
         achievements: [
           <>
             Developed, designed and implemented the SUAVE website, accommodating for over 2,350 monthly users.
+          </>,
+          <>
+            Iterated and refined the website through consistent feedback from the team lead, achieving a 17%
+            improvement in accessibility metrics and delivering a user-centric experience.
+          </>,
+          <>
+            Worked directly with a three person team of technical and non-technical members, eﬀectively bridging the
+            gap between complex technical concepts and business needs to drive successful project outcomes.
           </>,
         ],
         images: [
@@ -148,7 +178,9 @@ const about: About = {
     institutions: [
       {
         name: "University of Sydney", 
-        description: <>Studying software engineering. <br /> Subjects: Machine Learning</>,
+        description: <>Bachelor of Engineering (Software) (Honours).</>,
+        coursework: <>Coursework: Object Oriented Programming, Algorithm Design, Data Structures & Algorithms, Machine
+                      Learning & AI, Data Science, Security Engineering, Data Management, Web Systems, Systems Programming.</>,
       },
     ],
   },
@@ -157,38 +189,15 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma", 
+        title: "Full-stack development", 
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Developed full-stack applications in TypeScript, JavaScript, Next.js, Node.js and PostgreSQL</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "TypeScript",
+            icon: "typescript",
           },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
           {
             name: "JavaScript",
             icon: "javascript",
@@ -198,19 +207,51 @@ const about: About = {
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Node.js",
+            icon: "nodejs",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
+          //{
+          //  src: "/images/projects/project-01/cover-02.jpg",
+          //  alt: "Project image",
+          //  width: 16,
+          //  height: 9,
+          //},
+        ],
+      },
+      {
+        title: "Data Science",
+        description: (
+          <>Worked with SQL databases to deduce actionable insights tailored to building companies & home-buyers to make more informed decisions. </>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Python",
+            icon: "python",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
           },
         ],
+        // optional: leave the array empty if you don't want to display images
+        images: []
+      },  
+      {
+        title: "Machine Learning",
+        description: (
+          <>Developed Machine Learning and Deep Learning models, including Convolutional Neural Networks.</>
+        ),
+        tags: [
+          {
+            name: "Machine Learning",
+            icon: "ai",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: []
       },  
     ],
   },
