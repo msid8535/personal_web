@@ -100,26 +100,6 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Sydney Interplanetary Rover Initiative",
-        timeframe: "July 2025 - Present",
-        role: "Machine Learning",
-        achievements: [
-          <>
-            Currently working on Deep Learning models to accelerate the detection of 
-            water and ilmenite concentrations in lunar regolith samples.  
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/siri_updated.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
         company: "RDA Group",
         timeframe: "January 2025 - April 2025",
         role: "Software Engineer Intern",
@@ -144,6 +124,26 @@ const about: About = {
         ],
       },
       {
+        company: "Sydney Interplanetary Rover Initiative",
+        timeframe: "July 2025 - Present",
+        role: "Machine Learning Specialist",
+        achievements: [
+          <>
+            Currently working on Deep Learning models to accelerate the detection of 
+            water and ilmenite concentrations in lunar regolith samples.  
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          //{
+            //src: "/images/projects/project-01/siri_updated.jpg",
+            //alt: "Once UI Project",
+            //width: 16,
+            //height: 9,
+          //},
+        ],
+      },
+      {
         company: "Sydney UAV Engineering",
         timeframe: "June 2024 - Present",
         role: "Full Stack Software Engineer",
@@ -160,15 +160,15 @@ const about: About = {
             gap between complex technical concepts and business needs to drive successful project outcomes.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/suave_expanded.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        // images: [
+        //   // optional: leave the array empty if you don't want to display images
+        //   {
+        //     src: "/images/projects/project-01/suave_expanded.jpg",
+        //     alt: "Once UI Project",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        // ],
       },
     ],
   },
