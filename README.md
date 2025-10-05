@@ -1,6 +1,6 @@
-# Mohsin Murtaza Siddiqui's Portfolio Website
+# Mohsin's Website
 
-Mohsin Murtaza Siddiqui is a Software Engineer based in Sydney, Australia. He has experience in fast-paced startups, not-for-profit societies and student engineering teams.
+Mohsin Murtaza Siddiqui is a Software Engineer based in Sydney, Australia.
 
 ## Some of my work
 
