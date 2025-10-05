@@ -21,7 +21,7 @@ export function Projects({ range, exclude }: ProjectsProps) {
 
   // Select the 1st, 2nd and 9th projects (1-based positions).
   // Guards against lists with fewer than 9 items by filtering out undefined.
-  const indices = [0, 1, 8];
+  const indices = [2];
   const selectedProjects = indices.map((i) => sortedProjects[i]).filter(Boolean);
 
   const displayedProjects = range

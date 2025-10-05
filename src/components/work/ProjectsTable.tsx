@@ -18,9 +18,12 @@ export function ProjectsTable({ range, exclude }: ProjectsTableProps) {
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
   });
 
-  const displayedProjects = range
-    ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
-    : sortedProjects;
+  // Apply optional range then cap to the first 6 projects
+  const displayedProjects = (
+    range
+      ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
+      : sortedProjects
+  ).slice(0, 6);
 
   return (
     <>
@@ -55,12 +58,21 @@ export function ProjectsTable({ range, exclude }: ProjectsTableProps) {
         .project-card {
           border-radius: 12px;
           padding: 16px;
-          transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
-          will-change: transform, box-shadow, background-color;
+          transition: transform 200ms ease, box-shadow 200ms ease, background-position 600ms cubic-bezier(.2,.9,.2,1), background-color 200ms ease, color 200ms ease;
+          will-change: transform, box-shadow, background-position, background-color;
           cursor: default;
           overflow: hidden;
           /* neutral card background (dark) by default; can be overridden with --card-bg */
           background-color: var(--card-bg, rgba(47, 70, 105, 0.95));
+          /* gradient used to animate a darker sweep from left to right (now almost-black on the right) */
+          background-image: linear-gradient(
+            90deg,
+            rgba(32,39,49,0.98) 0%,
+            rgba(14,16,20,0.98) 60%,
+            rgba(8,10,12,0.98) 100%
+          );
+          background-size: 200% 100%;
+          background-position: left center;
           color: var(--card-text, #fff);
 
           /* make all cards a uniform height and layout as a column so child ProjectTable can fill */
@@ -78,18 +90,22 @@ export function ProjectsTable({ range, exclude }: ProjectsTableProps) {
 
         /* Subtle checkerboard: alternating but close tones */
         .projects-grid .project-card:nth-child(odd) {
+          /* keep subtle variation but rely on gradient for hover sweep */
           background-color: rgba(32, 39, 49, 0.95);
         }
         .projects-grid .project-card:nth-child(even) {
           background-color: rgba(32, 39, 49, 0.95);
         }
 
-        /* Hover effect: lift and switch to a light card with readable dark text */
+        /* Hover effect: lift and sweep an almost-black gradient left-to-right */
         .project-card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 12px 30px rgba(16,24,40,0.12);
-          background-color: rgba(255, 250, 240, 0.98); /* subtle warm highlight */
-          color: #000;
+          transform: translateY(-14px);
+          /* slightly softened but still prominent shadow for dark hover */
+          box-shadow: 0 16px 40px rgba(6,8,10,0.6);
+          /* move the background-position to the right so the darker (near-black) side sweeps across */
+          background-position: right center;
+          /* ensure text stays readable on darker hover */
+          color: #fff;
         }
 
         /* Make inner links/text inherit colors */

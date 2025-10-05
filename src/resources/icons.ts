@@ -35,7 +35,7 @@ import {
 
 import { GiArtificialHive } from "react-icons/gi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaInstagram } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   ai: GiArtificialHive,
@@ -55,6 +55,7 @@ export const iconLibrary: Record<string, IconType> = {
   eyeOff: HiOutlineEyeSlash,
   github: FaGithub,
   linkedin: FaLinkedin,
+  instagram: FaInstagram,
   x: FaX,
   twitter: FaXTwitter,
   threads: FaThreads,

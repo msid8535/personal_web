@@ -178,9 +178,10 @@ const about: About = {
     institutions: [
       {
         name: "University of Sydney", 
-        description: <>Bachelor of Engineering (Software) (Honours).</>,
+        description: <>Bachelor of Engineering (Software) (Honours)</>,
         coursework: <>Coursework: Object Oriented Programming, Algorithm Design, Data Structures & Algorithms, Machine
-                      Learning & AI, Data Science, Security Engineering, Data Management, Web Systems, Systems Programming.</>,
+                      Learning & AI, Data Science, Security Engineering, Data and Information Management, Web Info Systems, 
+                      Systems Programming, Agile Software Development Practices, Interdisciplinary Engineering.</>,
       },
     ],
   },
@@ -191,7 +192,7 @@ const about: About = {
       {
         title: "Full-stack development", 
         description: (
-          <>Developed full-stack applications in TypeScript, JavaScript, Next.js, Node.js and PostgreSQL</>
+          <>Developed full-stack applications in TypeScript, JavaScript, Next.js, Node.js and PostgreSQL for the RDA Group.</>
         ),
         tags: [
           {
@@ -222,6 +223,20 @@ const about: About = {
         ],
       },
       {
+        title: "Machine Learning",
+        description: (
+          <>Worked on models for the Sydney Interplanetary Rover Initiative, the University of Sydney's representative team, for the 2026 Australian Rover Challenge.</>
+        ),
+        tags: [
+          {
+            name: "Machine Learning",
+            icon: "ai",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: []
+      },
+      {
         title: "Data Science",
         description: (
           <>Worked with SQL databases to deduce actionable insights tailored to building companies & home-buyers to make more informed decisions. </>
@@ -238,21 +253,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: []
-      },  
-      {
-        title: "Machine Learning",
-        description: (
-          <>Developed Machine Learning and Deep Learning models, including Convolutional Neural Networks.</>
-        ),
-        tags: [
-          {
-            name: "Machine Learning",
-            icon: "ai",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: []
-      },  
+      },    
     ],
   },
 };
