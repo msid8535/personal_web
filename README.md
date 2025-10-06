@@ -13,5 +13,16 @@ Mohsin Murtaza Siddiqui is a Software Engineer based in Sydney, Australia.
 3. [RDA Group](#)
 4. [USYD Cyber Security Society](https://www.usydcyber.com)
 
+## Languages with experience in
+
+1. Java
+2. Python
+3. JavaScript
+4. SQL (PostgreSQL, MySQL and SQLite)
+5. C
+6. C++
+7. TypeScript
+
+
 
 
