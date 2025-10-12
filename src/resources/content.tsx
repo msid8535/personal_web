@@ -91,7 +91,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Mohsin is a Sydney-based software engineer with a passion for building technological tools.
+        Mohsin is a Sydney-based software engineer passionate about creating practical and impactful tools.
       </>
     ),
   },
