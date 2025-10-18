@@ -100,30 +100,6 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "RDA Group",
-        timeframe: "January 2025 - April 2025",
-        role: "Software Engineer Intern",
-        achievements: [
-          <>
-            Developed and integrated RESTful APIs and backend services using Node.js, 
-            with efficient data handling and storage powered by PostgreSQL (Supabase). 
-          </>,
-          <>
-            Utilised TypeScript and JavaScript within the Next.js framework to enhance 
-            performance and maintainability.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          //{
-          //  src: "/images/projects/project-01/siri_updated.jpg",
-          //  alt: "Once UI Project",
-          //  width: 16,
-          //  height: 9,
-          //},
-        ],
-      },
-      {
         company: "Sydney Interplanetary Rover Initiative",
         timeframe: "July 2025 - Present",
         role: "Machine Learning Specialist",
@@ -141,6 +117,23 @@ const about: About = {
             //width: 16,
             //height: 9,
           //},
+        ],
+      },
+      {
+        company: "RDA Group",
+        timeframe: "January 2025 - April 2025",
+        role: "Software Engineer Intern",
+        achievements: [
+          <>
+            Developed and integrated RESTful APIs and backend services using Node.js, 
+            with efficient data handling and storage powered by PostgreSQL (Supabase). 
+          </>,
+          <>
+            Utilised TypeScript and JavaScript within the Next.js framework to enhance 
+            performance and maintainability.
+          </>,
+        ],
+        images: [
         ],
       },
       {
